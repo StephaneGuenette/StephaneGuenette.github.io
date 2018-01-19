@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1{
+  font-size: 3em;
+  border-bottom: 2px solid #AAAA39;
+  border-right: 2px solid #AAAA39;
+  border-radius: 20%;
+  background-color: #D4D46A;
+  width: 400px;
+  text-align: center;
+  color: yellow;
+  box-shadow: 4px 4px 5px grey;
+  margin-left: auto;
+  margin-right: auto;
+}
+img{
+  width: 450px;
+  height: 300px;
+  margin: 10px;
+  transition: all 1s;
+  opacity: 0.2;
+}
+img:hover{
+  transform: scale(1.1);
+  opacity: 1;
+  border: 2px solid black;
+}
