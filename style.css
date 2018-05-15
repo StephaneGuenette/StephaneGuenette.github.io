@@ -30,9 +30,7 @@ h1 {
   position: absolute;
   transition: transform 1s;
   top: 0;
-  background-image: URL(
-    "https://images.pexels.com/photos/296884/pexels-photo-296884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-  );
+  background-image: URL("./img/main/wood.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }

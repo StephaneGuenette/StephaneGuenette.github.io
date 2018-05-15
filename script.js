@@ -1,8 +1,5 @@
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
-const container = document.querySelector(".container");
-const test = document.querySelectorAll(".test");
-const logos = document.querySelectorAll(".logo");
 const mainlogo = document.querySelector(".headlogo");
 
 //open doors on click
