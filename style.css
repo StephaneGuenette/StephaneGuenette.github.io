@@ -1,26 +1,90 @@
-body{
-  font: 'Raleway', sans-serif;
-  color: rgba(0,0,0,0.5);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  top: 15%;
-  background: linear-gradient(to right, red, yellow);
+* {
+    margin: 0;
+    padding: 0;
 }
 
-h1{
-  font: 600 3.5em 'Raleway', sans-serif;
-  color: rgba(0,0,0,0.5);
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  width: 100%;
+h1 {
+    text-align: center;
+    margin-top: 120px;
 }
 
-h3{
-  font: 900 1em 'Raleway', sans-serif;
-  color: rgba(0,0,0,0.5);
-  text-align: center;
-  text-transform: none;
-  letter-spacing: 0.01em;
+.container {
+    overflow: hidden;
+    background-color: #555;
+    color: lightgrey;
+    text-shadow: -1px -1px 5px black;
+    height: 100vh;
+    position: relative;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-image: URL("./img/main/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.left,
+.right {
+    z-index: 10;
+    background-color: blue;
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    transition: transform 1s;
+    top: 0;
+    background-image: URL("https://images.pexels.com/photos/296884/pexels-photo-296884.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.animright {
+    transform: translateX(50vw);
+}
+
+.animleft {
+    transform: translateX(-50vw);
+}
+
+.logo {
+    position: absolute;
+    max-width: 100%;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+
+.leftlogo {
+    right: 0;
+    top: 45vh;
+}
+
+.rightlogo {
+    left: 0;
+    top: 45vh;
+}
+
+.two {
+    opacity: 1;
+    filter: blur(1px);
+}
+
+.headlogo {
+    max-width: 100%;
+    display: block;
+    opacity: 0;
+    transition: 1s all;
+    margin: 0 auto;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.logoapear {
+    opacity: 1;
 }

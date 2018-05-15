@@ -1,18 +1,33 @@
-var css = document.querySelector("h3");
-var color1 = document.querySelector(".color1");
-var color2 = document.querySelector(".color2");
-var body = document.getElementById("b");
+const left = document.querySelector(".left");
+const right = document.querySelector(".right");
+const container = document.querySelector(".container");
+const test = document.querySelectorAll(".test");
+const logos = document.querySelectorAll(".logo");
+const mainlogo = document.querySelector(".headlogo");
 
-function setGradient(){
-  body.style.background = "linear-gradient(to right, "
-   + color1.value + ", " + color2.value + ")";
-   postColor();
-}
+//open doors on click
+container.addEventListener("click", () => {
+  left.classList.add("animleft");
+  right.classList.add("animright");
+  mainlogo.classList.add("logoapear");
+});
+//close doors on ESC keydown
+document.addEventListener("keydown", e => {
+  if (e.keyCode === 27) {
+    left.classList.remove("animleft");
+    right.classList.remove("animright");
+    mainlogo.classList.remove("logoapear");
+  }
+});
 
-function postColor(){
-  css.textContent = color1.value + " " + color2.value;
-}
-
-postColor();
-color1.addEventListener("input", setGradient);
-color2.addEventListener("input", setGradient);
+//both logo sides (show hide the blured layer)
+test.forEach(test => {
+  test.addEventListener("mouseenter", () => {
+    logos[1].style.opacity = "0";
+    logos[3].style.opacity = "0";
+  });
+  test.addEventListener("mouseleave", () => {
+    logos[1].style.opacity = "1";
+    logos[3].style.opacity = "1";
+  });
+});
