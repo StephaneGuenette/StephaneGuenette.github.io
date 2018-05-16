@@ -1,16 +1,15 @@
 const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const mainlogo = document.querySelector(".headlogo");
+const back = document.querySelector(".btnBack");
 
-//open doors on click
+//door events
 left.addEventListener("click", openDoors);
 right.addEventListener("click", openDoors);
-//close doors on ESC keydown
-// document.addEventListener("keydown", closeDoors);
-mainlogo.addEventListener("click", close);
-document.addEventListener("keydown", closeDoors);
+back.addEventListener("click", closeDoors);
+//mainlogo.addEventListener("click", closeDoors);
 
-function close() {
+function closeDoors() {
   left.classList.remove("animleft");
   right.classList.remove("animright");
   mainlogo.classList.remove("logoapear");
@@ -21,13 +20,3 @@ function openDoors() {
   right.classList.add("animright");
   mainlogo.classList.add("logoapear");
 }
-
-function closeDoors(e) {
-  if (e.keyCode === 27) {
-    close();
-  }
-}
-
-setTimeout(function() {
-  openDoors();
-}, 3000);
