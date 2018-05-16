@@ -2,7 +2,6 @@ const left = document.querySelector(".left");
 const right = document.querySelector(".right");
 const mainlogo = document.querySelector(".headlogo");
 const back = document.querySelector(".btnBack");
-
 //door events
 left.addEventListener("click", openDoors);
 right.addEventListener("click", openDoors);
