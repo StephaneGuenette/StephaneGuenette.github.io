@@ -4,7 +4,6 @@ const mainlogo = document.querySelector(".headlogo");
 const back = document.querySelector(".btnBack");
 const h1 = document.querySelector("h1");
 firstSpan = document.querySelector(".typed");
-
 let typeRan = false;
 //door events
 left.addEventListener("click", openDoors);
@@ -33,7 +32,7 @@ function openDoors() {
   right.classList.add("animright");
   mainlogo.classList.add("logoapear");
 
-  if (!typeRan) {
+  if (!typeRan || firstSpan.textContent === "AM") {
     setTimeout(() => {
       var typed = new Typed(".typed", {
         strings: ["Surf", "Design", "Code", "Love", "AM"],
@@ -42,6 +41,6 @@ function openDoors() {
         backSpeed: 50
       });
       typeRan = true;
-    }, 1000);
+    }, 300);
   }
 }

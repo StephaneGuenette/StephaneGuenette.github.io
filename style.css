@@ -1,135 +1,145 @@
 * {
-  margin: 0;
-  padding: 0;
-  font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
 }
 
 h1,
 .typed {
-  font-family: "PT Serif", serif;
-  font-weight: 700;
-  text-shadow: 3px 2px 1px #222222;
-  text-align: center;
-  margin-top: 120px;
-  font-size: 4rem;
-  cursor: pointer;
+    font-family: "PT Serif", serif;
+    font-weight: 700;
+    text-shadow: 3px 2px 1px #222222;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 .container {
-  overflow: hidden;
-  background-color: #555;
-  color: lightgrey;
-  text-shadow: -1px -1px 5px black;
-  height: 100vh;
-  position: relative;
-  background-image: URL("./img/main/nature.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    overflow: hidden;
+    background-color: #555;
+    color: lightgrey;
+    text-shadow: -1px -1px 5px black;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-image: URL("./img/main/nature.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left,
 .right {
-  z-index: 3;
-  background-color: black;
-  height: 100vh;
-  width: 50vw;
-  position: absolute;
-  transition: transform 1s;
-  top: 0;
-  background-image: URL("./img/main/wood.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
+    z-index: 3;
+    background-color: black;
+    height: 100vh;
+    width: 50vw;
+    position: absolute;
+    transition: transform 1s;
+    top: 0;
+    background-image: URL("./img/main/wood.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left {
-  left: 0;
+    left: 0;
 }
 
 .right {
-  right: 0;
+    right: 0;
 }
 
 .animright {
-  transform: translateX(50vw);
+    transform: translateX(50vw);
 }
 
 .animleft {
-  transform: translateX(-50vw);
+    transform: translateX(-50vw);
 }
 
 .logo {
-  position: absolute;
-  max-width: 100%;
-  transition: opacity 0.5s;
-  cursor: pointer;
+    position: absolute;
+    max-width: 100%;
+    transition: opacity 0.5s;
+    cursor: pointer;
 }
 
 .leftlogo {
-  right: 0;
-  top: 30vh;
+    right: 0;
+    top: 30vh;
+    max-width: 80%;
 }
 
 .rightlogo {
-  left: 0;
-  top: 30vh;
+    left: 0;
+    top: 30vh;
+    max-width: 80%;
 }
 
 .headlogo {
-  display: block;
-  max-width: 100%;
-  opacity: 0;
-  transition: 1s all;
-  margin: 0 auto;
-  margin-top: 10rem;
-  cursor: pointer;
+    display: block;
+    max-width: 80%;
+    opacity: 0;
+    transition: 1s all;
+    margin: 0 auto;
+    margin-top: 10rem;
+    cursor: pointer;
 }
 
 .logoapear {
-  opacity: 1;
+    opacity: 1;
 }
 
 .btnBack {
-  margin: 1rem;
-  display: inline-block;
-  transition: all 0.3s;
-  cursor: pointer;
+    position: absolute;
+    left: 0;
+    margin: 1rem;
+    display: inline-block;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 .btnBack:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .btnBack:active {
-  transform: translateY(1px);
+    transform: translateY(1px);
 }
 
 .typed-cursor {
-  opacity: 0;
+    opacity: 0;
 }
 
 #Layer_2 {
-  display: block;
-  margin: 0 auto;
-  transition: all 0.3s;
-  cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    left: 45vw;
+    display: block;
+    margin: 10px;
+    transition: all 0.3s;
+    cursor: pointer;
 }
 
 #Layer_2:hover {
-  transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 .noselect {
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Safari */
-  -khtml-user-select: none;
-  /* Konqueror HTML */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge */
-  user-select: none;
-  /* Non-prefixed version, currently
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
                                   supported by Chrome and Opera */
 }
