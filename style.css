@@ -156,6 +156,15 @@ h1,
                                   supported by Chrome and Opera */
 }
 
+
+.hidden{
+    overflow: hidden;
+}
+
+
+
+
+
 @media (min-width: 600px) {
     #firstSection {
         background-position: center;
